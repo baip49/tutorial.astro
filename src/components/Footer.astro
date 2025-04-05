@@ -1,6 +1,5 @@
 ---
-const platform = "github";
-const username = "baip49";
+import Social from "./Social.astro";
 ---
 
 <style>
@@ -12,9 +11,7 @@ const username = "baip49";
 </style>
 
 <footer>
-    <p>
-        ¡Más información sobre mis proyectos en <a
-            href={`https://www.${platform}.com/${username}`}>{platform}</a
-        >!
-    </p>
+    <Social platform="twitter" username="usecodebaip" />
+    <Social platform="github" username="baip49" />
+    <Social platform="youtube" username="usecodebaip" />
 </footer>

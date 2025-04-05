@@ -1,26 +1,9 @@
 ---
-import "../styles/global.css";
-import Navigation from "../components/Navigation.astro";
-import Footer from "../components/Footer.astro";
-import Social from "../components/Social.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pageTitle = "Página de inicio";
 ---
 
-<html lang="es">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-		<Navigation />
-
-		<h1>{pageTitle}</h1>
-
-		<Footer />
-		<Social platform="twitter" username="usecodebaip" />
-		<Social platform="github" username="baip49" />
-		<Social platform="youtube" username="usecodebaip" />
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+	<h2>Mi impresionante subtítulo del blog</h2>
+</BaseLayout>
